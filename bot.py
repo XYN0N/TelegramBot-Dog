@@ -18,7 +18,7 @@ def bau(bot, update):
     chat_id = update.message.chat_id
     bot.send_photo(chat_id=chat_id, photo=url)
 def main():
-    updater = Updater('YOUR-TOKEN')
+    updater = Updater('YOUR-TOKEN') # YOUR PERSONAL TG BOT TOKEN
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bau',bau))
     updater.start_polling()
